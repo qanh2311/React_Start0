@@ -1,49 +1,39 @@
-import AgeVerification from "./components/AgeVerification";
-import AxiosDemo from "./components/AxiosDemo";
-import Counter from "./components/Counter";
-import EffectDemo from "./components/EffectDemo";
-import UserManagement from "./components/UseManagement";
-import UserApi from "./components/UserApi";
-import UserCard from "./components/UserCard";
-import UserList from "./components/UserList";
-import WelcomeForm from "./components/WelcomeForm";
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router";
+import { UserContext } from "./context/UserContext";
+
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Users from "./pages/Users";
+import About from "./pages/About";
 
 function App() {
+  const [user, setUser] = useState({
+    name: "Quynh Anh",
+    role: "Frontend Developer",
+  });
+
+  const changeUser = () => {
+    setUser({
+      name: "Min",
+      role: "Backend Developer",
+    });
+  };
+
   return (
-    <div>
-      <h1>User Management</h1>
+    <UserContext.Provider value={user}>
+      <BrowserRouter>
+        <Navbar />
 
-      <UserCard name="An" age={20} role="Frontend Developer" />
+        <button onClick={changeUser}>Change User</button>
 
-      <UserCard name="Binh" age={22} role="Backend Developer" />
-
-      <UserCard name="Chi" age={21} role="Fullstack Developer" />
-
-      <hr />
-
-      <Counter />
-
-      <hr />
-
-      <WelcomeForm />
-
-      <hr />
-      <AgeVerification />
-
-      <hr />
-      <UserList />
-
-      <hr />
-      <UserManagement />
-
-      <EffectDemo />
-
-      <hr />
-      <UserApi />
-
-      <hr />
-      <AxiosDemo />
-    </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
+    </UserContext.Provider>
   );
 }
 
