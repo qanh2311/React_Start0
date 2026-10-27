@@ -1,0 +1,89 @@
+{
+  "listTasks": [
+    {
+      "id": "1",
+      "title": "Learn React Hooks",
+      "description": "Practice useState and useEffect",
+      "priority": "High",
+      "status": "Completed"
+    },
+    {
+      "id": "2",
+      "title": "Build a Task Management App",
+      "description": "Create reusable React components",
+      "priority": "High",
+      "status": "Pending"
+    },
+    {
+      "title": "Practice JavaScript",
+      "description": "Review map, filter and reduce",
+      "priority": "High",
+      "status": "Completed",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "title": "Study English",
+      "description": "Learn 20 technical English words",
+      "priority": "Medium",
+      "status": "Completed"
+    },
+    {
+      "id": "5",
+      "title": "Learn Axios",
+      "description": "Practice GET, POST, PUT and DELETE requests",
+      "priority": "High",
+      "status": "Pending"
+    },
+    {
+      "id": "6",
+      "title": "Review Git Commands",
+      "description": "Practice clone, add, commit, push and pull",
+      "priority": "Low",
+      "status": "Completed"
+    },
+    {
+      "id": "7",
+      "title": "Design Task Dashboard",
+      "description": "Create a responsive UI using Bootstrap",
+      "priority": "Medium",
+      "status": "Pending"
+    },
+    {
+      "id": "8",
+      "title": "Practice React Props",
+      "description": "Pass data between parent and child components",
+      "priority": "Low",
+      "status": "Completed"
+    },
+    {
+      "id": "9",
+      "title": "Learn React Router",
+      "description": "Understand client-side routing",
+      "priority": "Medium",
+      "status": "Pending"
+    },
+    {
+      "id": "10",
+      "title": "Complete React Practice Project",
+      "description": "Finish all CRUD and filtering features",
+      "priority": "High",
+      "status": "Pending"
+    },
+    {
+      "title": "đàasdf",
+      "description": "",
+      "priority": "Low",
+      "status": "Pending",
+      "id": "mTiH9nXEV8M"
+    },
+    {
+      "title": "âdsfasdfasdfasdfsd",
+      "description": "àdsfe",
+      "priority": "Low",
+      "status": "Pending",
+      "id": "zASZEeRdwZM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
